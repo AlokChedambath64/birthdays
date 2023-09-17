@@ -1,7 +1,7 @@
 <h1>
   Birthdays
 </h1>
-In app.py, you’ll find a Flask web application. The application has one route (/) that accepts both POST requests (after the if) and GET requests (after the else).
+In app.py, you’ll find a Flask web application. The application has one route (/) that accepts both POST requests and GET requests. 
 
 birthdays.db is a SQLite database with one table, birthdays, that has four columns: id, name, month, and day.
 
