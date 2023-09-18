@@ -25,7 +25,6 @@ def after_request(response):
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        # TODO: Add the user's entry into the database
         print("Submitted Via post")
         fullname = request.form.get("fullname")
         month = request.form.get("month")
@@ -45,7 +44,6 @@ def index():
         list = db.execute("SELECT * FROM birthdays;")
         return render_template("index.html", list = list)
     else:
-        # TODO: Display the entries in the database on index.html
         list = db.execute("SELECT * FROM birthdays;")
         return render_template("index.html", list = list)
 
